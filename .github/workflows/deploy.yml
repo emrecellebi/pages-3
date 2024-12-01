@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
       - name: Build artifacts
         run: |
           export MDBOOK_OUTPUT__HTML__GIT_REPOSITORY_URL="https://github.com/$REPO"
-          export MDBOOK_OUTPUT__HTML__EDIT_URL_TEMPLATE="https://github.com/$REPO/edit/master/{path}"
+          export MDBOOK_OUTPUT__HTML__EDIT_URL_TEMPLATE="https://github.com/$REPO/edit/main/{path}"
           mdbook build
         env:
           REPO: "${{ github.repository }}"

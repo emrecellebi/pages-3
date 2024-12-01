@@ -12,5 +12,5 @@ build-dir = "docs"
 [output.html]
 google-analytics = "UA-37017099-3"
 git-repository-url = "https://github.com/emrecellebi/pages-3"
-edit-url-template = "https://github.com/emrecellebi/pages-3/edit/master/{path}"
+edit-url-template = "https://github.com/emrecellebi/pages-3/edit/main/{path}"
 site-url = "/pages-3/"
